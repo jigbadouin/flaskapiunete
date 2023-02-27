@@ -14,14 +14,14 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-app.config['MYSQL_HOST'] = os.getenv('DB_HOST')
-app.config['MYSQL_USER'] = os.getenv('DB_USER')
-app.config['MYSQL_PASSWORD'] = os.getenv('DB_PASS')
-app.config['MYSQL_DB'] = os.getenv('DB_NAME')
+app.config['MYSQL_HOST'] = os.getenv('107.21.217.238')
+app.config['MYSQL_USER'] = os.getenv('competidor')
+app.config['MYSQL_PASSWORD'] = os.getenv('Kompetim0s1979')
+app.config['MYSQL_DB'] = os.getenv('competencias)
 #app.config["MYSQL_PORT"] = 3306
 
 mysql = MySQL(app)
-app.secret_key = os.getenv('API_KEY')
+app.secret_key = os.getenv('5b74b63af609d44aa00613b7b7e6c3b035e95a2a6f')
 
 @app.route('/hello')
 def hello():
