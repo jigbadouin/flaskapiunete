@@ -11,7 +11,7 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__) #nombre app 
 CORS(app)
 
 app.config['MYSQL_HOST'] = os.getenv('DB_MYSQL_HOST')#107.21.217.238
